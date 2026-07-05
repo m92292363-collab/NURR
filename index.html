@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>معهد نور · التميز في التعليم العربي والإسلامي</title>
+    <title>معهد النور الإسلامي بكانفينج الجنوبي · التميز في التعليم العربي والإسلامي</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta name="theme-color" content="#2f6f9e">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Mahad Noor">
+    <meta name="apple-mobile-web-app-title" content="Nurr Institute">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
         :root {
@@ -41,12 +41,12 @@
         .lang-switch button { background: transparent; border: none; padding: 0.3rem 0.8rem; border-radius: 30px; font-size: 0.85rem; font-weight: 600; cursor: pointer; color: var(--text-dark); transition: all 0.2s; }
         .lang-switch button.active { background: var(--islamic-green) !important; color: white !important; }
         .nav-right { display: flex; align-items: center; gap: 0.6rem; }
-        .school-logo { width: 70px; height: 70px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .school-logo { width: 100px; height: 100px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
         .school-logo .logo-circle { width: 64px; height: 64px; border-radius: 50%; background: linear-gradient(135deg, var(--primary-accent), var(--primary-teal)); display: grid; place-items: center; color: white; font-family: 'Amiri','Noto Naskh Arabic',serif; font-size: 2.1rem; font-weight: 700; box-shadow: 0 6px 18px rgba(47,111,158,0.3); }
-        .school-logo .logo-img { width: 70px; height: 70px; object-fit: contain; background: transparent; display: block; }
-        .institute-name { font-size: 1.6rem; font-weight: 800; color: var(--islamic-green); letter-spacing: 1px; white-space: nowrap; text-shadow: 1px 1px 3px rgba(0,0,0,0.04); }
-        .institute-name .title-line1, .institute-name .title-line2 { display: inline; font-size: inherit; font-weight: inherit; color: inherit; }
-        .institute-name .title-line1::after { content: " "; white-space: pre; }
+        .school-logo .logo-img { width: 100px; height: 100px; object-fit: contain; background: transparent; display: block; }
+        .institute-name { font-size: 1.35rem; font-weight: 800; color: var(--islamic-green); letter-spacing: 0.5px; white-space: nowrap; text-shadow: 1px 1px 3px rgba(0,0,0,0.04); line-height: 1.15; display: flex; flex-direction: column; }
+        .institute-name .title-line1 { font-size: inherit; font-weight: inherit; color: inherit; }
+        .institute-name .title-line2 { font-size: 0.82em; font-weight: 700; color: var(--primary-teal); letter-spacing: 2px; }
 
         /* SEARCH */
         .search-section { margin: 0.2rem 0 0.8rem; width: 100%; display: flex; justify-content: center; align-items: center; position: relative; z-index: 1000; }
@@ -278,10 +278,10 @@
             .container { padding: 0 0.8rem; }
             .navbar { flex-direction: column; gap: 0.4rem; padding: 0.6rem 0; }
             .nav-left, .nav-right { width: 100%; justify-content: center; }
-            .institute-name { font-size: 1.1rem; }
-            .school-logo { width: 55px; height: 55px; }
+            .institute-name { font-size: 0.95rem; letter-spacing: 0.3px; }
+            .school-logo { width: 72px; height: 72px; }
             .school-logo .logo-circle { width: 50px; height: 50px; font-size: 1.6rem; }
-            .school-logo .logo-img { width: 54px; height: 54px; }
+            .school-logo .logo-img { width: 72px; height: 72px; }
             .search-container { width: 70%; max-width: 250px; }
             .tab-item { padding: 0.6rem 0.8rem; font-size: 0.8rem; }
             .welcome-section { padding: 1.2rem 0.5rem; }
@@ -300,7 +300,7 @@
             .verse-card .verse-ar { font-size: 1.5rem; }
         }
         @media (max-width: 480px) {
-            .institute-name { font-size: 1.05rem; }
+            .institute-name { font-size: 0.82rem; letter-spacing: 0.2px; }
             .tab-item { padding: 0.5rem 0.55rem; font-size: 0.72rem; gap: 0.25rem; }
         }
         button, input, select, textarea { -webkit-appearance: none; appearance: none; }
@@ -326,8 +326,8 @@
         </div>
         <div class="nav-right">
             <div class="institute-name" id="mainTitle">
-                <span class="title-line1">MAHAD</span>
-                <span class="title-line2">NOOR</span>
+                <span class="title-line1">THE ISLAMIC NURR INSTITUTE</span>
+                <span class="title-line2">KANIFING SOUTH</span>
             </div>
             <div class="school-logo">
                 <img class="logo-img" src="logo.png" alt="معهد النور الإسلامي">
@@ -362,7 +362,7 @@
                 <div class="nusrat-image-box">
                     <div class="carousel-container" id="meccaCarousel">
                         <div class="carousel-slides">
-                            <div class="carousel-slide active"><div class="image-container"><div class="slide-graphic sg1"><i class="fas fa-mosque"></i><span data-en="Mahad Noor" data-ar="معهد نور">معهد نور</span></div></div></div>
+                            <div class="carousel-slide active"><div class="image-container"><div class="slide-graphic sg1"><i class="fas fa-mosque"></i><span data-en="Islamic Nurr Institute" data-ar="معهد النور">معهد نور</span></div></div></div>
                             <div class="carousel-slide"><div class="image-container"><div class="slide-graphic sg2"><i class="fas fa-book-quran"></i><span data-en="Qur'an &amp; Tajwid" data-ar="القرآن والتجويد">القرآن والتجويد</span></div></div></div>
                             <div class="carousel-slide"><div class="image-container"><div class="slide-graphic sg3"><i class="fas fa-language"></i><span data-en="Arabic Language" data-ar="اللغة العربية">اللغة العربية</span></div></div></div>
                             <div class="carousel-slide"><div class="image-container"><div class="slide-graphic sg4"><i class="fas fa-star-and-crescent"></i><span data-en="Islamic Studies" data-ar="العلوم الإسلامية">العلوم الإسلامية</span></div></div></div>
@@ -380,9 +380,9 @@
                 <div class="welcome-section" id="welcome-section">
                     <div class="welcome-card">
                         <div class="welcome-content">
-                            <h2 class="welcome-title" data-en="Welcome to Mahad Noor" data-ar="مرحباً بكم في معهد نور"><span>مرحباً بكم في معهد نور</span></h2>
+                            <h2 class="welcome-title" data-en="Welcome to The Islamic Nurr Institute" data-ar="مرحباً بكم في معهد نور"><span>مرحباً بكم في معهد نور</span></h2>
                             <div class="welcome-text">
-                                <p data-en="Mahad Noor is an Arabic and Islamic school in The Gambia, providing quality religious education rooted in the Arabic language and the sciences of the Qur'an." data-ar="معهد نور مدرسة عربية وإسلامية في غامبيا، تقدم تعليماً دينياً عالي الجودة يرتكز على اللغة العربية وعلوم القرآن الكريم.">معهد نور مدرسة عربية وإسلامية في غامبيا، تقدم تعليماً دينياً عالي الجودة يرتكز على اللغة العربية وعلوم القرآن الكريم.</p>
+                                <p data-en="The Islamic Nurr Institute is an Arabic and Islamic school in Kanifing South, The Gambia, providing quality religious education rooted in the Arabic language and the sciences of the Qur'an." data-ar="معهد نور مدرسة عربية وإسلامية في غامبيا، تقدم تعليماً دينياً عالي الجودة يرتكز على اللغة العربية وعلوم القرآن الكريم.">معهد نور مدرسة عربية وإسلامية في غامبيا، تقدم تعليماً دينياً عالي الجودة يرتكز على اللغة العربية وعلوم القرآن الكريم.</p>
                                 <p data-en="We are committed to nurturing young minds with sound knowledge, good character, and a love for their faith." data-ar="نحن ملتزمون برعاية العقول الشابة بالعلم النافع وحسن الخلق ومحبة الدين.">نحن ملتزمون برعاية العقول الشابة بالعلم النافع وحسن الخلق ومحبة الدين.</p>
                             </div>
                             <div class="welcome-decoration"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
@@ -421,7 +421,7 @@
                 <div class="about-section" id="about-section">
                     <div class="about-content">
                         <h2><i class="fas fa-info-circle"></i> <span data-en="About Our School" data-ar="عن المعهد">عن المعهد</span></h2>
-                        <p data-en="Mahad Noor is an Arabic and Islamic school in The Gambia, founded to give children a firm footing in their religion and the language of the Qur'an." data-ar="معهد نور مدرسة عربية وإسلامية في غامبيا، أُسّست لتمنح الأطفال أساساً متيناً في دينهم ولغة القرآن الكريم.">معهد نور مدرسة عربية وإسلامية في غامبيا، أُسّست لتمنح الأطفال أساساً متيناً في دينهم ولغة القرآن الكريم.</p>
+                        <p data-en="The Islamic Nurr Institute is an Arabic and Islamic school in Kanifing South, The Gambia, founded to give children a firm footing in their religion and the language of the Qur'an." data-ar="معهد نور مدرسة عربية وإسلامية في غامبيا، أُسّست لتمنح الأطفال أساساً متيناً في دينهم ولغة القرآن الكريم.">معهد نور مدرسة عربية وإسلامية في غامبيا، أُسّست لتمنح الأطفال أساساً متيناً في دينهم ولغة القرآن الكريم.</p>
                         <p data-en="Our teachers combine classical Islamic scholarship with thoughtful teaching, so students understand and live what they learn." data-ar="يجمع معلمونا بين العلم الشرعي الأصيل والتعليم المدروس، حتى يفهم الطلاب ما يتعلمونه ويعيشوه.">يجمع معلمونا بين العلم الشرعي الأصيل والتعليم المدروس، حتى يفهم الطلاب ما يتعلمونه ويعيشوه.</p>
                         <div class="about-highlight"><p data-en="Knowledge that illuminates the heart — that is what we strive for." data-ar="علمٌ يُنوّر القلب — هذا ما نسعى إليه.">علمٌ يُنوّر القلب — هذا ما نسعى إليه.</p></div>
                     </div>
@@ -576,8 +576,9 @@
     <div class="container">
         <div class="footer-content">
             <div class="footer-brand">
-                <div class="fb-name">Mahad Noor</div>
-                <div class="fb-ar">مَعْهَد النُّور</div>
+                <div class="fb-name">The Islamic Nurr Institute</div>
+                <div class="fb-ar">مَعْهَد النُّور الإِسْلَامِي بكانفينج الجنوبي</div>
+                <div style="color:var(--footer-text-light);font-size:0.85rem;margin-top:0.4rem;opacity:0.75;letter-spacing:1px;">EST. 1988</div>
             </div>
             <div class="contact-stack">
                 <div class="contact-item"><i class="fas fa-phone-alt"></i><span>+220 259 4282</span></div>
@@ -589,7 +590,7 @@
                 <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
             </div>
             <div class="footer-legal">
-                <div class="copyright"><i class="far fa-copyright"></i> <span id="yr"></span> <span data-en="Mahad Noor. All rights reserved." data-ar="معهد نور. جميع الحقوق محفوظة.">معهد نور. جميع الحقوق محفوظة.</span></div>
+                <div class="copyright"><i class="far fa-copyright"></i> <span id="yr"></span> <span data-en="The Islamic Nurr Institute, Kanifing South. All rights reserved." data-ar="معهد نور. جميع الحقوق محفوظة.">معهد نور. جميع الحقوق محفوظة.</span></div>
                 <div class="footer-links"><a href="#" data-en="Privacy Policy" data-ar="سياسة الخصوصية">سياسة الخصوصية</a><a href="#" data-en="Terms" data-ar="شروط الخدمة">شروط الخدمة</a></div>
             </div>
         </div>
@@ -608,7 +609,7 @@
         langButtons.forEach(btn => btn.classList.toggle('active', btn.getAttribute('data-lang') === lang));
         document.querySelectorAll('[data-en][data-ar]').forEach(el => { el.textContent = el.getAttribute(lang === 'en' ? 'data-en' : 'data-ar'); });
         const si = document.getElementById('searchInput');
-        if (si) si.placeholder = lang === 'en' ? 'Search Mahad Noor...' : 'البحث في معهد نور...';
+        if (si) si.placeholder = lang === 'en' ? 'Search The Islamic Nurr Institute...' : 'البحث في معهد نور...';
     }
     langButtons.forEach(btn => btn.addEventListener('click', () => setLang(btn.getAttribute('data-lang'))));
     setLang('ar');
