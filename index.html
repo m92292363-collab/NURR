@@ -98,10 +98,7 @@
         .image-container { position: relative; width: 100%; height: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; }
         /* gradient placeholder slides */
         .slide-graphic { width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.8rem; color: white; text-align: center; padding: 1rem; }
-        .slide-img { width: 100%; height: 100%; object-fit: cover; display: block; }
-        .image-container.ph { background: linear-gradient(135deg, #2f6f9e, #234152); }
-        .image-container.ph::after { content: 'أضف صورة ' attr(data-ph); position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.6rem; color: rgba(255,255,255,0.85); font-size: clamp(1rem, 3.5vw, 1.4rem); font-weight: 700; letter-spacing: 0.5px; }
-        .image-container.ph::before { content: '\f03e'; font-family: 'Font Awesome 6 Free'; font-weight: 900; position: absolute; top: calc(50% - 2.6rem); left: 50%; transform: translateX(-50%); color: rgba(255,255,255,0.85); font-size: clamp(2rem, 7vw, 3.6rem); z-index: 1; }
+        .image-container img { width: 100%; height: 100%; object-fit: cover; display: block; }
         .slide-graphic i { font-size: clamp(2.5rem, 8vw, 4.5rem); opacity: 0.95; }
         .slide-graphic span { font-size: clamp(1rem, 3.5vw, 1.6rem); font-weight: 700; letter-spacing: 0.5px; }
         .sg1 { background: linear-gradient(135deg, #2f6f9e, #234152); }
@@ -369,14 +366,14 @@
                 <div class="nusrat-image-box">
                     <div class="carousel-container" id="meccaCarousel">
                         <div class="carousel-slides">
-                            <div class="carousel-slide active"><div class="image-container"><img class="slide-img" src="image3.png" alt="معهد النور 1" onerror="this.style.display='none';this.parentNode.classList.add('ph');this.parentNode.setAttribute('data-ph','1');"></div></div>
-                            <div class="carousel-slide"><div class="image-container"><img class="slide-img" src="image2.png" alt="معهد النور 2" onerror="this.style.display='none';this.parentNode.classList.add('ph');this.parentNode.setAttribute('data-ph','2');"></div></div>
-                            <div class="carousel-slide"><div class="image-container"><img class="slide-img" src="image.png" alt="معهد النور 3" onerror="this.style.display='none';this.parentNode.classList.add('ph');this.parentNode.setAttribute('data-ph','3');"></div></div>
-                            <div class="carousel-slide"><div class="image-container"><img class="slide-img" src="image22.png" alt="معهد النور 4" onerror="this.style.display='none';this.parentNode.classList.add('ph');this.parentNode.setAttribute('data-ph','4');"></div></div>
-                            <div class="carousel-slide"><div class="image-container"><img class="slide-img" src="image11.png" alt="معهد النور 5" onerror="this.style.display='none';this.parentNode.classList.add('ph');this.parentNode.setAttribute('data-ph','5');"></div></div>
-                            <div class="carousel-slide"><div class="image-container"><img class="slide-img" src="slide6.jpg" alt="معهد النور 6" onerror="this.style.display='none';this.parentNode.classList.add('ph');this.parentNode.setAttribute('data-ph','6');"></div></div>
-                            <div class="carousel-slide"><div class="image-container"><img class="slide-img" src="slide7.jpg" alt="معهد النور 7" onerror="this.style.display='none';this.parentNode.classList.add('ph');this.parentNode.setAttribute('data-ph','7');"></div></div>
-                            <div class="carousel-slide"><div class="image-container"><img class="slide-img" src="slide8.jpg" alt="معهد النور 8" onerror="this.style.display='none';this.parentNode.classList.add('ph');this.parentNode.setAttribute('data-ph','8');"></div></div>
+                            <div class="carousel-slide active"><div class="image-container"><img src="slide1.jpg" alt="Slide 1" fetchpriority="high" decoding="async"></div></div>
+                            <div class="carousel-slide"><div class="image-container"><img src="slide2.jpg" alt="Slide 2" loading="lazy" decoding="async"></div></div>
+                            <div class="carousel-slide"><div class="image-container"><img src="slide3.jpg" alt="Slide 3" loading="lazy" decoding="async"></div></div>
+                            <div class="carousel-slide"><div class="image-container"><img src="slide4.jpg" alt="Slide 4" loading="lazy" decoding="async"></div></div>
+                            <div class="carousel-slide"><div class="image-container"><img src="slide5.jpg" alt="Slide 5" loading="lazy" decoding="async"></div></div>
+                            <div class="carousel-slide"><div class="image-container"><img src="slide6.jpg" alt="Slide 6" loading="lazy" decoding="async"></div></div>
+                            <div class="carousel-slide"><div class="image-container"><img src="slide7.jpg" alt="Slide 7" loading="lazy" decoding="async"></div></div>
+                            <div class="carousel-slide"><div class="image-container"><img src="slide8.jpg" alt="Slide 8" loading="lazy" decoding="async"></div></div>
                         </div>
                         <button class="carousel-arrow prev" onclick="changeSlide(-1)"><i class="fas fa-chevron-right"></i></button>
                         <button class="carousel-arrow next" onclick="changeSlide(1)"><i class="fas fa-chevron-left"></i></button>
@@ -662,11 +659,11 @@
     }
     window.changeSlide = d => showSlide(currentSlideIndex + d);
     window.currentSlide = i => showSlide(i - 1);
-    let slideInterval = setInterval(() => showSlide(currentSlideIndex + 1), 3500);
+    let slideInterval = setInterval(() => showSlide(currentSlideIndex - 1), 3000);
     const carousel = document.querySelector('.carousel-container');
     if (carousel) {
         carousel.addEventListener('mouseenter', () => clearInterval(slideInterval));
-        carousel.addEventListener('mouseleave', () => { clearInterval(slideInterval); slideInterval = setInterval(() => showSlide(currentSlideIndex + 1), 3500); });
+        carousel.addEventListener('mouseleave', () => { clearInterval(slideInterval); slideInterval = setInterval(() => showSlide(currentSlideIndex - 1), 3000); });
     }
     showSlide(0);
 
