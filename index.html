@@ -107,6 +107,9 @@
         /* gradient placeholder slides */
         .slide-graphic { width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.8rem; color: white; text-align: center; padding: 1rem; }
         .image-container img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .slide-caption { position: absolute; top: 50%; right: 6%; transform: translateY(-50%); background: rgba(47,111,158,0.72); color: #fff; padding: 0.9rem 2rem; border-radius: 14px 40px 40px 14px; font-size: clamp(1.05rem, 2.6vw, 1.7rem); font-weight: 700; letter-spacing: 0.3px; max-width: 55%; text-align: right; line-height: 1.5; z-index: 5; box-shadow: 0 8px 24px rgba(35,65,82,0.35); backdrop-filter: blur(2px); }
+        .slide-caption:empty { display: none; }
+        @media (max-width: 820px) { .slide-caption { padding: 0.55rem 1.1rem; border-radius: 10px 26px 26px 10px; max-width: 65%; } }
         .slide-graphic i { font-size: clamp(2.5rem, 8vw, 4.5rem); opacity: 0.95; }
         .slide-graphic span { font-size: clamp(1rem, 3.5vw, 1.6rem); font-weight: 700; letter-spacing: 0.5px; }
         .sg1 { background: linear-gradient(135deg, #2f6f9e, #234152); }
@@ -380,17 +383,17 @@
                 <div class="nusrat-image-box">
                     <div class="carousel-container" id="meccaCarousel">
                         <div class="carousel-slides">
-                            <div class="carousel-slide active"><div class="image-container"><img src="slide1.jpg.jpeg" alt="Slide 1" fetchpriority="high" decoding="async"></div></div>
-                            <div class="carousel-slide"><div class="image-container"><img src="slide2.jpg.jpeg" alt="Slide 2" loading="lazy" decoding="async"></div></div>
-                            <div class="carousel-slide"><div class="image-container"><img src="slide3.jpg.jpeg" alt="Slide 3" loading="lazy" decoding="async"></div></div>
-                            <div class="carousel-slide"><div class="image-container"><img src="slide4.jpg.jpeg" alt="Slide 4" loading="lazy" decoding="async"></div></div>
-                            <div class="carousel-slide"><div class="image-container"><img src="slide5.jpg.jpeg" alt="Slide 5" loading="lazy" decoding="async"></div></div>
-                            <div class="carousel-slide"><div class="image-container"><img src="slide6.jpg.jpeg" alt="Slide 6" loading="lazy" decoding="async"></div></div>
-                            <div class="carousel-slide"><div class="image-container"><img src="slide7.jpg.jpeg" alt="Slide 7" loading="lazy" decoding="async"></div></div>
-                            <div class="carousel-slide"><div class="image-container"><img src="slide8.jpg.jpeg" alt="Slide 8" loading="lazy" decoding="async"></div></div>
-                            <div class="carousel-slide"><div class="image-container"><img src="slide9.jpg.jpeg" alt="Slide 9" loading="lazy" decoding="async"></div></div>
-                            <div class="carousel-slide"><div class="image-container"><img src="slide10.jpg.jpeg" alt="Slide 10" loading="lazy" decoding="async"></div></div>
-                            <div class="carousel-slide"><div class="image-container"><img src="slide11.jpg.jpeg" alt="Slide 11" loading="lazy" decoding="async"></div></div>
+                            <div class="carousel-slide active"><div class="image-container"><img src="slide1.jpg.jpeg" alt="Slide 1" fetchpriority="high" decoding="async"><div class="slide-caption" id="cap1" data-ar="مرحباً بكم في معهد النور الإسلامي" data-en="Welcome to The Islamic Nurr Institute">مرحباً بكم في معهد النور الإسلامي</div></div></div>
+                            <div class="carousel-slide"><div class="image-container"><img src="slide2.jpg.jpeg" alt="Slide 2" loading="lazy" decoding="async"><div class="slide-caption" id="cap2" data-ar="مكتب المدير" data-en="The Principal&#39;s office">مكتب المدير</div></div></div>
+                            <div class="carousel-slide"><div class="image-container"><img src="slide3.jpg.jpeg" alt="Slide 3" loading="lazy" decoding="async"><div class="slide-caption" id="cap3" data-ar="مبنى المعهد" data-en="The school campus">مبنى المعهد</div></div></div>
+                            <div class="carousel-slide"><div class="image-container"><img src="slide4.jpg.jpeg" alt="Slide 4" loading="lazy" decoding="async"><div class="slide-caption" id="cap4" data-ar="زيارة وزير التعليم الأساسي" data-en="Visit of the Minister of Basic Education">زيارة وزير التعليم الأساسي</div></div></div>
+                            <div class="carousel-slide"><div class="image-container"><img src="slide5.jpg.jpeg" alt="Slide 5" loading="lazy" decoding="async"><div class="slide-caption" id="cap5" data-ar="زيارة وزير التعليم الأساسي" data-en="Visit of the Minister of Basic Education">زيارة وزير التعليم الأساسي</div></div></div>
+                            <div class="carousel-slide"><div class="image-container"><img src="slide6.jpg.jpeg" alt="Slide 6" loading="lazy" decoding="async"><div class="slide-caption" id="cap6" data-ar="مسجد المعهد" data-en="The school mosque">مسجد المعهد</div></div></div>
+                            <div class="carousel-slide"><div class="image-container"><img src="slide7.jpg.jpeg" alt="Slide 7" loading="lazy" decoding="async"><div class="slide-caption" id="cap7" data-ar="مسجد المعهد" data-en="The school mosque">مسجد المعهد</div></div></div>
+                            <div class="carousel-slide"><div class="image-container"><img src="slide8.jpg.jpeg" alt="Slide 8" loading="lazy" decoding="async"><div class="slide-caption" id="cap8" data-ar="مدير المعهد" data-en="The Principal">مدير المعهد</div></div></div>
+                            <div class="carousel-slide"><div class="image-container"><img src="slide9.jpg.jpeg" alt="Slide 9" loading="lazy" decoding="async"><div class="slide-caption" id="cap9" data-ar="مبنى المعهد" data-en="The school campus">مبنى المعهد</div></div></div>
+                            <div class="carousel-slide"><div class="image-container"><img src="slide10.jpg.jpeg" alt="Slide 10" loading="lazy" decoding="async"><div class="slide-caption" id="cap10" data-ar="الطالبات" data-en="Students">الطالبات</div></div></div>
+                            <div class="carousel-slide"><div class="image-container"><img src="slide11.jpg.jpeg" alt="Slide 11" loading="lazy" decoding="async"><div class="slide-caption" id="cap11" data-ar="الطلاب" data-en="Students">الطلاب</div></div></div>
                         </div>
                         <button class="carousel-arrow prev" onclick="changeSlide(-1)"><i class="fas fa-chevron-right"></i></button>
                         <button class="carousel-arrow next" onclick="changeSlide(1)"><i class="fas fa-chevron-left"></i></button>
